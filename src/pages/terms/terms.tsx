@@ -19,7 +19,7 @@ export default function TermsScreen() {
       <Header variant="simple" />
 
       <Terms.Body>
-        <Terms.Title>약관</Terms.Title>
+        <Terms.Title>서비스 이용약관</Terms.Title>
         <Terms.Content>
           <Terms.SearchForm role="search">
             <input aria-label="약관 검색" placeholder="검색" />

@@ -9,7 +9,7 @@ export default function PersonalTermsScreen() {
     <Terms.Page>
       <Header variant="simple" />
       <Terms.DetailBody>
-        <Terms.Title>약관</Terms.Title>
+        <Terms.Title>서비스 이용약관</Terms.Title>
         <Terms.BackLink href="/terms">
           <img src={backIcon} alt="" />
           뒤로가기
