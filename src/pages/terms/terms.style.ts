@@ -84,7 +84,7 @@ export const TermsList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin: 3rem 0 0;
+  margin: 2.625rem 0 0;
   padding: 0;
   list-style: none;
 `;
@@ -114,13 +114,13 @@ export const TermsItem = styled.li`
 export const DetailBody = styled.main`
   position: relative;
   width: 100%;
-  height: 177.5rem;
+  height: 180.375rem;
 `;
 
 export const BackLink = styled.a`
   position: absolute;
-  top: 8.375rem;
-  left: 27.1875rem;
+  top: 11.25rem;
+  left: 30.0625rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -141,8 +141,8 @@ export const BackLink = styled.a`
 
 export const DetailTitle = styled.h2`
   position: absolute;
-  top: 11.75rem;
-  left: 27.1875rem;
+  top: 14.625rem;
+  left: 30.0625rem;
   margin: 0;
   color: #000;
   font-size: 1.5rem;
@@ -156,14 +156,18 @@ export const DetailTitle = styled.h2`
 
 export const Article = styled.article`
   position: absolute;
-  top: 17.25rem;
-  left: 50%;
+  top: 20.125rem;
+  left: 35.375rem;
   width: min(61.4375rem, calc(100% - 4rem));
   color: #000;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.59;
-  transform: translateX(-50%);
+
+  @media (max-width: 75rem) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   section {
     margin-bottom: 1.9875rem;
