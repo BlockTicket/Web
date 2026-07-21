@@ -68,7 +68,7 @@ export default function MainScreen() {
           <Main.PopularHeader>
             <h2>지금 인기 있는 공연</h2>
             <img src={infoIcon} alt="" />
-            <a href="#more">더보기</a>
+            <a href="/performances/popular">더보기</a>
           </Main.PopularHeader>
           <Main.Carousel>
             <Main.CarouselArrows src={carouselArrows} alt="" />
