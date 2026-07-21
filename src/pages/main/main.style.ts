@@ -142,6 +142,36 @@ export const CarouselArrows = styled.img`
   height: 3.75rem;
 `;
 
+export const CarouselButton = styled.button<{ $right?: boolean }>`
+  position: absolute;
+  z-index: 2;
+  top: 6.6875rem;
+  ${({ $right }) => ($right ? 'right: 4.125rem;' : 'left: 4.125rem;')}
+  width: 3rem;
+  height: 3.75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid #25283b;
+    outline-offset: 0.25rem;
+  }
+`;
+
+export const PageStatus = styled.span`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`;
+
 export const CardList = styled.div`
   position: relative;
   z-index: 1;
